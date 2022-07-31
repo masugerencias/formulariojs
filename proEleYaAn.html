@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco</title>
+    <link href="proEleYaAn.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="bienvenido">
+        <h3>Bienvendo a tu banco de confianza</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-building-bank"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="3" y1="21" x2="21" y2="21" />
+          <line x1="3" y1="10" x2="21" y2="10" />
+          <polyline points="5 6 12 3 19 6" />
+          <line x1="4" y1="10" x2="4" y2="21" />
+          <line x1="20" y1="10" x2="20" y2="21" />
+          <line x1="8" y1="14" x2="8" y2="17" />
+          <line x1="12" y1="14" x2="12" y2="17" />
+          <line x1="16" y1="14" x2="16" y2="17" />
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <form class="formulario">
+        <fieldset>
+          <legend>Rellene todos los campos</legend>
+
+          <div class="contenedor">
+            <div class="campo">
+              <label for="nombre">Nombre: </label>
+              <input type="text" id="nombre" placeholder="Ej: Juan" required />
+            </div>
+
+            <div class="campo">
+              <label for="apellido">Apellidos: </label>
+              <input
+                type="text"
+                id="apellido"
+                placeholder="Ej: García"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="dni">DNI: </label>
+              <input type="text" id="dni" placeholder="XXXXXXXX-X" required />
+            </div>
+
+            <div class="campo">
+              <label for="direccion">Dirección: </label>
+              <input
+                type="text"
+                id="direccion"
+                required
+                placeholder="Ej: C/Día, 22, 1A, 28044, Madrid, España"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="poblacion">Población: </label>
+              <input
+                type="text"
+                id="poblacion"
+                required
+                placeholder="Ej: Madrid"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="pais">País: </label>
+              <input type="text" id="pais" required placeholder="Ej: España" />
+            </div>
+
+            <div class="campo">
+              <label for="email">Email: </label>
+              <input
+                type="adress"
+                id="email"
+                required
+                placeholder="Ej: garcía@gmail.com"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="email2">Confirmar email: </label>
+              <input type="email2" id="emailconfirm" required />
+            </div>
+
+            <div class="campo">
+              <label for="intereses">Intereses: </label>
+              <input type="text" id="intereses" />
+            </div>
+
+            <div class="campo">
+              <label for="contrasena">Contraseña: </label>
+              <input type="password" id="contrasena" required />
+            </div>
+
+            <div class="enviar">
+              <input type="button" value="Enviar" id="send" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <div class="mensaje">
+      <h2><span id="mensajeError"></span></h2>
+    </div>
+    <!-- <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>DNI</th>
+            <th>Dirección</th>
+            <th>Población</th>
+            <th>País</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+    <footer>
+      <p>Todos los derechos reservados</p>
+    </footer>
+    <script src="proEleYaAn.js"></script>
+  </body>
+</html>

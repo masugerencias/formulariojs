@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box; /* para que el border, padding, etc no afecte el ancho de nuestros elementos*/
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+.bienvenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-bottom: 2rem;
+    background-color: #3c89d0;
+    color: white;
+    font-weight: 400;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80rem;
+}
+.formulario fieldset {
+    border: 2rem #3c89d0;
+}
+.formulario {
+    width: min( 70rem, 100% );
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 75rem;
+    background-color: #3c89d0;
+}
+legend {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5rem; 
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90rem;
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: block;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10rem;
+}
+.campo input {
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+.enviar input {
+    padding: 1.5rem;
+    border-style: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4.5rem;
+    cursor: pointer;
+}
+footer {
+    background-color: #3c89d0;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    
+}
+p {
+    font-weight: 400;
+}
+.mensaje {
+    width: 100%;
+    height: 2rem;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.table{
+    width: 100%;
+    height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+table tr{
+    height: 40px;
+}
+
+
+table th{
+  background-color: #D5CFE1;    
+   color: #464655;
+  font-size: medium;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+table td{
+   
+   font-weight: 500;
+   border:1px solid  darkgray; 
+  
+   font-size: 0.9em;
+   padding-left: 10px;
+   margin-bottom: 60px;
+   
+  }
